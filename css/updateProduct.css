@@ -1,0 +1,72 @@
+* {
+    padding        : 0;
+    margin         : 0;
+    outline        : none;
+    box-sizing     : border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.container {
+    background-color: teal;
+
+    height: 100vh;
+    padding-left: 40%;
+    padding-top:10% ;
+}
+h1{
+    font-family: sans-serif;
+}
+#updateProductField{
+    height: 50px;
+    width: 300px;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: pink
+}
+
+
+@media(max-width:710px){
+    .container {
+        background-color: teal;
+    
+        height: 100vh;
+        padding-left: 30%;
+        padding-top:15% ;
+    }
+}
+
+@media(max-width:530px){
+    .container {
+        background-color: teal;
+    
+        height: 100vh;
+        padding-left: 20%;
+        padding-top:15% ;
+    }
+}
+
+@media(max-width:710px){
+    .container {
+        background-color: teal;
+    
+        height: 100vh;
+        padding-left: 10%;
+        padding-top:15% ;
+    }
+}
+
+@media(max-width:335px){
+    .container {
+        background-color: teal;
+    
+        height: 100vh;
+        padding-left: 4%;
+        padding-top:15% ;
+    }
+}

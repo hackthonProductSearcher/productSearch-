@@ -1,0 +1,217 @@
+/* For Everything */
+
+* {
+    padding        : 0;
+    margin         : 0;
+    outline        : none;
+    box-sizing     : border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* Login Page */
+.Container {
+    width : 100%;
+    height: 100vh;
+
+    background-size : 100% auto;
+    background-image: url('img/bg.png');
+    object-fit      : fill;
+
+}
+.inputContainer{
+    width: 100%;
+    padding-left: 40%;
+    padding-top: 15%;
+}
+
+.inputFields{
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+.navbutton{
+    position: relative;
+    left: 44%;
+    top: 14px;
+    background-color: teal;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+
+
+/* mediaQureies */
+
+
+@media(max-width:1298px){
+    .navbutton{
+        position: relative;
+        left: 45%;
+        top: 15px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    } 
+}
+
+@media(max-width:1160px){
+    .navbutton{
+        position: relative;
+        left: 45%;
+        top: 17px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    } 
+}
+
+@media(max-width:1094px){
+    .navbutton{
+        position: relative;
+        left: 47%;
+        top: 17px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    } 
+}
+
+@media(max-width:953px){
+    .navbutton{
+        position: relative;
+        left: 48%;
+        top: 17px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    } 
+}
+
+
+@media(max-width:788px){
+    .navbutton{
+        position: relative;
+        left: 40%;
+        top: 17px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    .inputContainer{
+        width: 100%;
+        padding-left: 30%;
+        padding-top: 27%;
+        position: relative;
+    
+    }
+    
+}
+
+
+@media(max-width:587px){
+    .navbutton{
+        position: relative;
+        left: 36%;
+        top: 17px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    .inputContainer{
+        width: 100%;
+        padding-left: 24%;
+        padding-top: 37%;
+        position: relative;
+    
+    }
+    
+}
+
+@media(max-width:455px){
+    .navbutton{
+        position: relative;
+        left: 36%;
+        top: 17px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    .inputContainer{
+        width: 100%;
+        padding-left: 24%;
+        padding-top: 47%;
+        position: relative;
+    
+    }
+    
+}
+
+@media(max-width:407px){
+    .navbutton{
+        position: relative;
+        left: 33%;
+        top: 17px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    .inputContainer{
+        width: 100%;
+        padding-left: 15%;
+        padding-top: 37%;
+        position: relative;
+    
+    }
+    
+}
+
+@media(max-width:365px){
+    .navbutton{
+        position: relative;
+        left: 33%;
+        top: 17px;
+        background-color: teal;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    .inputContainer{
+        width: 100%;
+        padding-left: 15%;
+        padding-top: 56%;
+        position: relative;
+    
+    }
+    
+}

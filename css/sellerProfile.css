@@ -1,0 +1,54 @@
+* {
+    padding        : 0;
+    margin         : 0;
+    outline        : none;
+    box-sizing     : border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.shopNameAndAddress{
+    background-color: rgb(207, 206, 206);
+    height: 20vh;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+/* ShopName */
+
+.shopName{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* address */
+
+.address{
+    /* background-color: green; */
+    height: 80px;
+}
+
+/* availble products */
+/* note to backend developer I am keepin the colour dark for container availableProducts for you to know the avalible space plaz change it after tou complete to the original color */
+.availableProducts{
+    /* background-color: rgb(243, 243, 243);  -> original color */
+    background-color: blue;
+    height: 70vh;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+h3{
+    border-bottom: black 2px solid;
+    margin-right: 55rem;
+}
+h4{
+    font-family: cursive;
+}
+
+.updateProduct{
+    margin-left: 10%;
+    color: #000;
+    background-color: turquoise;
+    padding: 10px;
+    border-radius: 20px;
+}

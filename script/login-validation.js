@@ -3,7 +3,7 @@ const loginValidate = () => {
 
     x = document.querySelector("#email").value;
     y = document.querySelector("#password").value;
-
+    
     if (x == "" || y == "") {
         alert("error");
     } else {

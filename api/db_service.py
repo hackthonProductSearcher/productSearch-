@@ -23,7 +23,6 @@ class UserService:
     def create(data):
         pass_hash = hash_password(data['password'])
         id = generate_id()
-        print(id)
         pk = User.insert(
             id = id,
             name = data['name'],
@@ -31,7 +30,7 @@ class UserService:
             pass_hash = pass_hash,
             is_seller = data['is_seller']
         ).execute()
-        return pk
+        return id
    
     def getAll():
         return User.select()
@@ -51,19 +50,16 @@ class UserService:
 
 class ShopService:
     def create(data):
-        try:
-            id = generate_id()
-            owner = User.get(User.id == data['owner_id'])
-            pk = User.insert(
-                id = id,
-                name = data['name'],
-                city = data['city'],
-                owner = owner
-            ).execute()
-            return id
-        except:
-            return 'DB error'
-    
+        id = generate_id()
+        owner = User.get(User.id == data['owner_id'])
+        pk = Shop.insert(
+            id = id,
+            name = data['name'],
+            city = data['city'],
+            owner = owner
+        ).execute()
+        return id
+
     def getAll():
         return Shop.select()
     
@@ -79,6 +75,9 @@ class ShopService:
             return shop.delete_instance()
         except:
             return 'Shop not found'
+
+    def find(keyword):
+        return Shop.select().where(Shop.name.contains(keyword))
 
 class ProductService:
     def create(data):
@@ -110,3 +109,6 @@ class ProductService:
             return product.delete_instance()
         except:
             return 'Product not found'
+            
+    def find(keyword):
+        return Product.select().where(Product.name.contains(keyword))

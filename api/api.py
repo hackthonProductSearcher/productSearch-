@@ -3,6 +3,7 @@ from flask_restful import Resource, Api, reqparse
 from db_service import UserService, ShopService, ProductService
 from playhouse.shortcuts import model_to_dict
 import json
+from search_function import *
 
 app = Flask(__name__)
 api = Api(app)
@@ -76,7 +77,20 @@ class ProductList(Resource):
         data = ProductService.getAll()
         return {'products': [model_to_dict(item) for item in data]}
 
+class SearchShop(Resource):
+    def get(self):
+        args = request.args
+        data = ShopService.find(args['q'])
+        return {'shops': [model_to_dict(item) for item in data]}
 
+class SearchProduct(Resource):
+    def get(self):
+        args = request.args
+        data = ProductService.find(args['q'])
+        return {'products': [model_to_dict(item) for item in data]}
+
+api.add_resource(SearchShop, '/search-shop')
+api.add_resource(SearchProduct, '/search-product')
 api.add_resource(User, '/users/<user_id>')
 api.add_resource(Product, '/products/<product_id>')
 api.add_resource(Shop, '/shops/<shop_id>')

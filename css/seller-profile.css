@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,input,textarea,button {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopName-address {
+    width: 80%;
+    height: 50%;
+}
+
+main {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.available-product {
+    width: 80%;
+    height: 90%;
+}
+
+.available-product h3 {
+    font-weight: 600;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+}
+
+.available-product h4 {
+    font-weight: 400;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.update {
+    width: 80vw;
+    height: 10vh;
+    margin: auto;
+}
+
+.update-product {
+    width: 18%;
+    margin-left: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+}

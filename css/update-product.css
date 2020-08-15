@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,input,textarea,button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 30vw;
+    height: 30vh;
+    margin: auto;
+    margin-top: 25vh;
+}
+
+.container h1 {
+    font-weight: 600;
+}
+
+#updateProductField {
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-size: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.update-products-button {
+    width: 40%;
+    height: 20%;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+}

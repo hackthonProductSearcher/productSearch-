@@ -7,7 +7,7 @@ const loginValidate = () => {
     if (x == "" || y == "") {
         alert("error");
     } else {
-        window.location.href="./user-type.html";
+        window.location.href="./seller-profile.html";
     }
 }
 

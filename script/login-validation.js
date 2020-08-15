@@ -1,15 +1,22 @@
 const loginValidate = () => {
-    let x;
+    let x, y;
 
-    x = document.querySelector(".input-field").value;
+    x = document.querySelector("#email").value;
+    y = document.querySelector("#password").value;
 
-    if (x == "") {
+    if (x == "" || y == "") {
         alert("error");
+    } else {
+        window.location.href="./user-type.html";
     }
 }
 
 const loginButton = document.querySelector("#login-button");
+const signUpButton = document.querySelector(".sign-up-link");
 
 loginButton.addEventListener("click", function() {
     loginValidate();
+})
+signUpButton.addEventListener("click", function() {
+    window.location.href="./sign-up.html";
 })

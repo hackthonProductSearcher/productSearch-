@@ -11,10 +11,10 @@ const loginValidate = () => {
     }
 }
 
-const loginButton = document.querySelector("#login-button");
+const login = document.querySelector("#login-button");
 const signUpButton = document.querySelector(".sign-up-link");
 
-loginButton.addEventListener("click", function() {
+login.addEventListener("click", function() {
     loginValidate();
 })
 signUpButton.addEventListener("click", function() {

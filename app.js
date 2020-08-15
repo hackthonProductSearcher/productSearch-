@@ -1,4 +1,3 @@
-function clearText()  
-{
-    document.getElementById('updateProductField').value = "";
-}  
+import main from "./script/main.js";
+
+document.addEventListener("DOMContentLoaded", main);

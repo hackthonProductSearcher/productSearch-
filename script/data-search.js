@@ -14,13 +14,13 @@ const datasearch = () => {
     const renderResult = results => {
         dataContainerElement.innerHTML = "";
         results.forEach(data => {
-            const {strMeal, strArea} = data;
+            const {name, city} = data;
             const dataElement = document.createElement("div");
             dataElement.setAttribute("class", "data");
 
             dataElement.innerHTML = `
-                <h3>${strMeal}</h3>
-                <h4>${strArea}</h4>
+                <h3>${name}</h3>
+                <h4>${city}</h4>
                 `;
             
             dataContainerElement.appendChild(dataElement);
